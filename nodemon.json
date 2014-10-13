@@ -1,0 +1,15 @@
+{
+  "script": "server.js",
+  "ext": "js",
+  "ignore": [
+    "gulpfile.js",
+    "app/"
+  ],
+  "watch": [
+    "server.js",
+    "server/**/*"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
