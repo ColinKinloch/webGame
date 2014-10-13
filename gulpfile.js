@@ -87,7 +87,7 @@ gulp.task('server', ['scripts'], function () {
   });
 });
 
-gulp.task('serve', ['server', 'watch'], function () {
+gulp.task('serve', ['styles', 'server', 'watch'], function () {
   require('opn')('http://localhost:9000');
 });
 
@@ -111,9 +111,9 @@ gulp.task('wiredep', function () {
 
 gulp.task('watch', function () {
   lrserver = $.livereload();
-  
+
   // watch for changed
-  
+
   gulp.watch([
     'app/*.html',
     '.tmp/styles/**/*.css',
